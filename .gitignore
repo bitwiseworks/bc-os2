@@ -1,0 +1,13 @@
+INSTALL
+Makefile.in
+aclocal.m4
+autom4te.cache/
+bc/Makefile.in
+config.h.in
+configure
+dc/Makefile.in
+doc/Makefile.in
+doc/texinfo.tex
+install-sh
+lib/Makefile.in
+missing
