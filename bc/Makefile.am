@@ -36,8 +36,9 @@ libmath.h: libmath.b $(fbcOBJ) $(LIBBC)
 	$(MAKE) global.o
 	$(LINK) -o fbc $(fbcOBJ) global.o $(LIBBC) $(LIBL) $(READLINELIB) $(LIBS)
 	./fbc -c $(srcdir)/libmath.b </dev/null >libmath.h
+	dos2unix libmath.h
 	$(srcdir)/fix-libmath_h
-	rm -f ./fbc ./global.o
+	rm -f ./fbc$(EXEEXT) ./global.o
 
 sbcOBJ = main.o sbc.o scan.o execute.o global.o load.o storage.o util.o \
          warranty.o
